@@ -69,6 +69,11 @@ public class TaskServiceImpl extends AbstractCommonService<Task, TaskDTO> implem
 
   @Override
   public Optional<TaskDTO> findById(Long id) {
+
+    if(id < 0) {
+      throw new IllegalArgumentException("Id cannot be negative");
+    }
+
     return taskRepository.findById(id).map(this::mapToDTO);
   }
 
