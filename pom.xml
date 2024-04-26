@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.1</version>
+        <version>3.2.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.example</groupId>
-    <artifactId>ticket-mastery-ticketing-app-orm-security</artifactId>
+    <artifactId>ticket-mastery-app-mvc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ticket-mastery-ticketing-app-orm-security</name>
-    <description>ticket-mastery-ticketing-app-orm-security</description>
+    <name>ticket-mastery-app-mvc</name>
+    <description>ticket-mastery-app-mvc</description>
     <properties>
         <java.version>17</java.version>
         <!-- Maven plugins -->
