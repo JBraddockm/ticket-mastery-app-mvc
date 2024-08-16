@@ -24,11 +24,10 @@ public class DatabaseUserDetailsServiceImpl implements DatabaseUserDetailsServic
   @Override
   public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-    User user =
+    return
         userRepository
             .findByUsername(username)
+                .map(UserPrincipal::new)
             .orElseThrow(() -> new UserNotFoundException(username));
-
-    return new UserPrincipal(user);
   }
 }
